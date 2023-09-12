@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 html,
 body{
     box-sizing: border-box;
@@ -10,8 +13,9 @@ a{
 }
 
 h1{
-    font-size: 50px;
+    font-size: 48px;
 }
+
 p{
     font-size: 20px;
 }
@@ -19,6 +23,40 @@ p{
 /* .anchor-tag{
     color:red
 } */
+
+header{
+    background-color: #85c4ff;
+    padding: 20px;
+}
+
+/* can style any nav in the header */
+header nav{
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 auto;
+    max-width: 900px;
+    /* flex-end push all the letters all the way to the right */
+
+} 
+
+/* can style any a inside a nav inside the nav */
+header nav a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none; 
+    margin: 0 10px;
+    
+    /* is good to have padding becuase you give the person more room in case they miss 
+    padding:3px; */
+
+}
+header nav a:last-of-type{
+    margin-right: 0;
+}
+
 
 .section-wrapper{
     background-color: #cff1ca;
@@ -28,7 +66,8 @@ p{
 .interior{
     background-color: #9ef490;
     border: 10px solid green;
-    margin: 4%;
+    margin: 0 auto;
+    max-width: 900px;
     padding: 40px;
 }
 
@@ -79,3 +118,45 @@ p{
     margin: 0 auto;
     max-width: 800px;
 }
+
+.positioning-wrapper{
+    background-color: #cad7f1;
+    padding: 40px 20px;
+    
+}
+.interior--positioning{
+    background-color: #85c4ff;
+    border-color: #0e3f9e;
+    min-height: 600px;
+    position: relative;
+
+}
+
+.circle{
+    background-color: #cad7f1;
+    border:5px solid #0e3f9e;
+    border-radius: 50%;
+    height: 80px;
+    position:absolute;
+    width:80px;
+}
+.square{
+    background-color: #cad7f1;
+    border:5px solid #0e3f9e;
+    position:absolute;
+    height: 80px;
+    width:80px;
+}
+.header-interior{
+    background-color: #85c4ff;
+    border-color:aqua;
+    
+
+}
+
+/* 
+relative
+static - default
+absolute
+fixed 
+*/

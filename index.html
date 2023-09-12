@@ -62,17 +62,61 @@
         </section>
         
         <!-- CSS Positioning Elements Section -->
-        <section>
+        <section class="positioning-wrapper">
+            <div class="interior interior--positioning">
+                <h1>Positioning Elements</h1>
+                <div class="circle" style="right: 20px; top: 300px;"></div>
+                <div class="circle" style="left: 50px; bottom:100px;"></div>
+                <div class="circle" style="right: 200px; top: 30px;"></div>
+                <div class="square" style="left: 300px; bottom:300px;"></div>
+                <div class="square" style="right: 30px; top: 20px;"></div>
+
+            </div>
            
         </section>
         
         <!-- CSS Heading Usage Section -->
         <section>
-            
+            <div class="interior header-interior">
+                <h1>Highest level header (h1)</h1>
+                <h2>Subsection of the header one(h2)</h2>
+                <p>this is a paragraph about h2</p>
+                <h3>Subsection of the header two(h3)</h3>
+                <p>this is a paragraph about h3</p>
+                <h4>This is a subsection of the third header (h4)</h4>
+                <p>this is a paragraph about h4</p>
+
+            </div>
         </section>
        
         <!-- CSS Simple Javascipt Section -->
         <section>
+            <div class ="interior">
+                <h1>Simple Javascipt</h1>
+                <script>
+                    let count = 0;
+                    function increaseCount(){
+                        count = count + 1;
+                        const countIndicator = document.querySelector(".count-indicator");
+                        return (countIndicator.innerHTML = count);
+                    }
+
+                    function decreaseCount(){
+                        count = count - 1;
+                        const countIndicator = document.querySelector(".count-indicator");
+                        return (countIndicator.innerHTML = count);
+                    }
+
+
+                    
+                </script>
+                <p> Count <sapn class = "count-indicator">0</sapn></p>
+                <button onClick="increaseCount()">Click to increase!</button>
+                <button onClick="decreaseCount()">Click to decrease!</button>
+
+
+                
+            </div>
             
         </section>
 
